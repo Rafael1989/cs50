@@ -1,0 +1,27 @@
+#include <cc50.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
+#define _ZOPEN_SOURCE
+
+int main(int argc, char *argv[]){
+    if(argc != 2){
+        return 1;
+    }
+    char salt[2];
+    salt[0] = argv[1][0];
+    salt[1] = argv[1][1];
+    char passTry[1000];
+    while(true){
+        for(int i = 0; i < 123; i++){
+            if((i > 29 && i < 40) || (i > 60 && i < 123)){
+                passTry[i] = i;
+                string pass = crypt(passTry,salt);
+                if(strcmp(pass,argv[1]) == 0){
+                    printf("%s",passTry);
+                    return 0;
+                }
+            }
+        }
+    }
+}

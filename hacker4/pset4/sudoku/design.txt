@@ -1,0 +1,1 @@
+Trabalhei em um projeto no Senac onde era tudo feito com scriptlets do java, ou seja, a lógica de negócio e conexões com a base de dados ficavam juntas com a tela e o frontend.

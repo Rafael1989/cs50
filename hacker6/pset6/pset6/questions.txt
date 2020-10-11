@@ -1,0 +1,19 @@
+0. É uma palavra
+1. Pega o tempo atual
+2. 2
+3. Pois before e after são structs e não os valores em si.
+4. Primeiro verifica se recebeu o número de parâmetros corretos, depois verifica se passou algum dicionário, ou irá usar o padrão. Depois começa a ler o arquivo, verifica se é um alfabetical caracter, e vai concatenando as letras até formar palavras, verifica o tamanho da palavra, palavras com digitos também não serão consideradas, quando formou a palavra ele checa se está no dicionário.
+5. Pois poderia vir caracteres vazios, e teria que alocar memória, sendo que vc não sabe o tamanho da string.
+6. Pois a palavra não pode mudar
+7. Foi uma hashtable com ponteiros, sendo que cada posicao da hashtable era composta por um hash gerado a partir da palavra, depois essa posição teria um struct composto por um ponteiro e uma palavra.
+8.
+WORDS MISSPELLED:     16934
+WORDS IN DICTIONARY:  143091
+WORDS IN FILE:        573396
+TIME IN load:         0.03
+TIME IN check:        80.36
+TIME IN size:         0.00
+TIME IN unload:       0.00
+TIME IN TOTAL:        80.39
+9. Nenhuma
+10. Acho que a função hash tem um loop que talvez atrase um pouco.

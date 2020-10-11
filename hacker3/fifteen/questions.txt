@@ -1,0 +1,9 @@
+questions.txt
+
+CC50
+Set de Problemas 3
+
+i.   3x3/4x4/5x5/6x6/7x7/8x8/9x9
+ii.  Matrix
+iii. greet
+iv.  Init, draw, move, won

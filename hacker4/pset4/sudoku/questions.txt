@@ -1,0 +1,13 @@
+1- Serve para comparar 2 strings
+2-
+int max;
+if(g.level == 'debug'){
+    max = 9;
+}else{
+    max = 1024;
+}
+3- Quando receber algum caracter que não seja um inteiro
+4-y e x
+5- show_cursor
+6- 188
+7- 1,2,9

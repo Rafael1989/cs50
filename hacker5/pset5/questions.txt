@@ -1,0 +1,30 @@
+0- 
+GIF - 256 cores
+BMP - 16777216
+JPG - 16000000
+PNG - 16,8 MILHÕES
+
+1- GIF, PNG
+2- Quando há perda, após a descompressão é diferente da original, a informação obtida, mas suficiente parecida.
+3- JPG
+4- O arquivo perde o ponteiro, porém a informação continua no hd
+5- Primeiro preciso saber o endereço da memória do arquivo, depois de deletar o arquivo, eu preciso escrever alguma coisa em cima desse endereço.
+6- É onde ficam as declarações das funções dessa biblioteca.
+7- Cada tipo tem um tamanho diferente, depende da sua necessidade.
+8- 
+BYTE - 1 byte
+WORD - 2 bytes
+DWORD - 4bytes
+LONG - 4bytes
+9-Tipo do arquivo
+10-
+bisize = 40 (BITMAPINFOHEADER)
+bfsize é o tamanho total
+11- biHeight é negativo quando começa de cima pra baixo é no canto superior esquerdo.
+12-biBitCount
+13- Pois o arquivo não existe
+14- Pois só tem um arquivo
+15 - 0
+16 - fseek recorta uma parte de um texto para colocar em outro texto
+17 - SEEK_CUR dada a posicao ele coloca o texto naquela posição
+18 - Foi o professor Plum, no saguão, com um castiçal
