@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  var contador = 0;
+  $("#timeUmTexto").html(contador);
+  $("#timeUm").click(function(){
+    contador++;	
+    $("#timeUmTexto").html(contador);
+    if(contador == 10){
+       alert("Congratulations you win!");
+    }
+  });
+  var contador2 = 0;
+  $("#timeDoisTexto").html(contador2);
+  $("#timeDois").click(function(){
+    contador2++;	
+    $("#timeDoisTexto").html(contador2);
+    if(contador2 == 10){
+       alert("Congratulations you win!");
+    }
+  });
+  $("#reset").click(function(){
+    contador = 0;
+    $("#timeUmTexto").html(contador);	
+    contador2 = 0;
+    $("#timeDoisTexto").html(contador2);
+  });
+});
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2>Championship</h2>
+
+<table>
+  <tr>
+    <th>Time 1</th>
+    <th>Time 2</th>
+  </tr>
+  <tr>
+    <td id="timeUmTexto"></td>
+    <td id="timeDoisTexto"></td>
+  </tr>
+  <tr>
+    <td><button id="timeUm">+</button></td>
+    <td><button id="timeDois">+</button></td>
+  </tr>
+</table>
+
+<td><button class="button" id="reset">Reset</button></td>
+
+
+</body>
+</html>
